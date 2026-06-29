@@ -1,0 +1,16 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Generated Pages output
+site/
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+local.properties
+.cxx/
+
+# OS
+.DS_Store

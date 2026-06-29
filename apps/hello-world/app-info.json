@@ -1,0 +1,5 @@
+{
+  "name": "Hello World",
+  "description": "A minimal Hello World Android application.",
+  "package": "com.pxsandbox.helloworld"
+}
