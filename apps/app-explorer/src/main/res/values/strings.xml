@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Explorer</string>
+    <string name="app_count">%1$d apps installed · tap to launch</string>
+    <string name="app_icon_desc">App icon</string>
+    <string name="cannot_launch">This app can\'t be launched</string>
+</resources>

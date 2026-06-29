@@ -1,0 +1,5 @@
+{
+  "name": "App Explorer",
+  "description": "Lists every app installed on the device (icon, name, package) and launches them on tap — reading the device app inventory is impossible from a browser.",
+  "package": "com.pxsandbox.appexplorer"
+}
