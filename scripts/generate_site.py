@@ -149,7 +149,7 @@ def render_html(apps: list[dict], generated_at: str) -> str:
 </head>
 <body>
   <header>
-    <h1>🤖 px-sandbox-android</h1>
+    <h1>px-sandbox-android</h1>
     <p>Download the latest built APKs</p>
   </header>
   <main>
