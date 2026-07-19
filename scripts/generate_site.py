@@ -95,7 +95,9 @@ def render_html(apps: list[dict], generated_at: str) -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>🤖 px-sandbox-android &middot; APK downloads</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <style>
     :root {{ color-scheme: light dark; }}
     * {{ box-sizing: border-box; }}
@@ -194,6 +196,11 @@ def main() -> None:
             }
         )
         print(f"  + {app_dir.name}: {apk} -> apks/{dest_name}")
+
+    assets_dir = Path(__file__).resolve().parent.parent / "site-assets"
+    if assets_dir.is_dir():
+        for asset in assets_dir.iterdir():
+            shutil.copy2(asset, args.output_dir / asset.name)
 
     generated_at = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     (args.output_dir / "index.html").write_text(
