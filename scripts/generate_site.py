@@ -94,7 +94,7 @@ def render_html(apps: list[dict], generated_at: str) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>px-sandbox-android &middot; APK downloads</title>
+  <title>PxSandbox Android</title>
   <link rel="icon" type="image/svg+xml" href="icon.svg">
   <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
