@@ -94,7 +94,8 @@ def render_html(apps: list[dict], generated_at: str) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>px-sandbox-android &middot; APK downloads</title>
+  <title>🤖 px-sandbox-android &middot; APK downloads</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
   <style>
     :root {{ color-scheme: light dark; }}
     * {{ box-sizing: border-box; }}
@@ -148,7 +149,7 @@ def render_html(apps: list[dict], generated_at: str) -> str:
 </head>
 <body>
   <header>
-    <h1>px-sandbox-android</h1>
+    <h1>🤖 px-sandbox-android</h1>
     <p>Download the latest built APKs</p>
   </header>
   <main>
